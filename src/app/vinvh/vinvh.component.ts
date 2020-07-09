@@ -8,14 +8,14 @@ import { VenserviceService } from '../venservice.service';
 })
 export class VinvhComponent implements OnInit {
 
-  invh: any;
+  inv: any;
 
   constructor(private vgr: VenserviceService) { }
 
   ngOnInit(): void {
    this.vgr.getvinvh().subscribe((grr)=>{
-     this.invh = grr['data']
-     console.log(this.invh)
+     this.inv = grr['data']
+     console.log(this.inv)
      
    })
 

@@ -6,7 +6,7 @@
           <h5 class=" card-header text-center">Vendor Login</h5>
           <div class="card-body">
            
-            <form [formGroup]="logForm" (ngSubmit)="getreqlog()">
+            <form [formGroup]="logForm" (ngSubmit)="getreqlog(logForm.value)">
               <div class="form-label-group" >
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" class="form-control" minlength = '5'  formControlName="username"  placeholder="username" required>
@@ -18,7 +18,7 @@
                 <input type="password" id="password" name="password" minlength = '6'  class="form-control" formControlName="password" placeholder="Password" required>
                
               </div>
-              <input class="btn btn-lg bg-gradient-dark btn-block  mt-3"  type="submit" style="color:white;" value="Login">
+              <input class="btn btn-lg  btn-block  mt-3"  type="submit" style="color:white; background-color: black;" value="Login">
               
             </form>
             

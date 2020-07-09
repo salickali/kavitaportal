@@ -2,18 +2,22 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">material</th>
-            <th scope="col">date</th>
-            <th scope="col">item</th>
-           
+            <th>MATERIAL TYPE</th>
+            <th> MATERIAL DOCUMENT</th>
+            <th>MOVEMENT TYPE</th>
+            <th>PLANT</th>
+            <th>STORAGE LOCATION</th>
+            
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{{gr}}</td>
-            <td>{{gr}}</td>
-            <td>{{gr}}</td>
-          </tr>
+          <tr >
+            <td>{{gr.LIFNR}}</td>
+              <td>{{gr.MBLNR}}</td>
+              <td>{{gr.BWART}}</td>
+              <td>{{gr.WERKS}}</td>
+              <td>{{gr.LGORT}}</td>
+            </tr>
           
         </tbody>
       </table>

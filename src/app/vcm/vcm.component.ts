@@ -13,7 +13,7 @@ export class VcmComponent implements OnInit {
 
   ngOnInit(): void {
    this.vgr.getvcm().subscribe((grr)=>{
-     this.cm = grr['data']
+     this.cm = grr['data']['4500000000']
      console.log(this.cm)
      
    })

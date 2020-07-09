@@ -2,19 +2,23 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">material</th>
-            <th scope="col">date</th>
-            <th scope="col">item</th>
-           
+            <th>Purchase Document</th>
+            <th>Status</th>
+            <th>Control Indicator</th>
+            <th>Quotation Submission</th>
+            
+            
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{{po}}</td>
-            <td>{{po}}</td>
-            <td>{{po}}</td>
-          </tr>
+          <tr >
+            <td>{{po.ABSGR}}</td>
+            <td>{{po.RLWRT}}</td>
+            <td>{{po.FORCE_CNT}}</td>
+            <td>{{po.IHRAN}}</td>
+            
           
+          </tr>
         </tbody>
       </table>
 </div>

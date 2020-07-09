@@ -2,18 +2,25 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">material</th>
-            <th scope="col">date</th>
-            <th scope="col">item</th>
-           
-          </tr>
+            <th> ACCOUNT DOCUMENT NUMBER</th>
+            <th>COMPANY CODE</th>
+            <th>FISCAL YEAR</th>
+            <th>DOCUMENT DATE</th>
+            <th>DOCUMENT type</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{{pay}}</td>
-            <td>{{pay}}</td>
-            <td>{{pay}}</td>
-          </tr>
+          <tr *ngFor="let res of finalRes">
+                    
+            <td>{{res.BELNR._text}}</td>
+            <td>{{res.BUKRS._text}}</td>
+            <td>{{res.GJAHR._text}}</td>
+            <td>{{res.BLDAT._text}}</td>
+            <td>{{res.BLART._text}}</td>
+                 
+                    
+
+                  </tr>
           
         </tbody>
       </table>

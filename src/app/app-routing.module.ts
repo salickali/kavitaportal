@@ -48,10 +48,11 @@ const routes: Routes = [
     path: 'invp',
     component: VinvpComponent
   },
-  {
-    path: '', //default pathMatch: 'prefix'
-    redirectTo: 'login'
-  },
+  {path: '', redirectTo:'/login',pathMatch:'full'},
+  // {
+  //   path: '', //default pathMatch: 'prefix'
+  //   redirectTo: 'login'
+  // },
 ];
 
 @NgModule({

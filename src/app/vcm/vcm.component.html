@@ -2,17 +2,23 @@
     <table class="table">
         <thead>
           <tr>
-            <th scope="col">material</th>
-            <th scope="col">date</th>
-            <th scope="col">item</th>
+            <th>DOCUMENT NUMBER</th>
+            <th>POSTING DATE</th>
+            <th>QUANTITY</th>
+            <th>AMOUNT</th>
+            <th>CURRENCY KEY</th>
            
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>{{cm}}</td>
-            <td>{{cm}}</td>
-            <td>{{cm}}</td>
+          <tr *ngFor="let c of cm" >
+
+            <td>{{c.BELNR._text}}</td>
+            <td>{{c.BUDAT._text}}</td>
+            <td>{{c.MENGE._text}}</td>
+            <td>{{c.DMBTR._text}}</td>
+            <td>{{c.WAERS._text}}</td>
+            
           </tr>
           
         </tbody>
